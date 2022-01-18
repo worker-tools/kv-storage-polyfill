@@ -1,7 +1,7 @@
 {
   "name": "@worker-tools/kv-storage-polyfill",
   "description": "",
-  "version": "1.0.0-foo",
+  "version": "1.0.0",
   "author": "Florian Klampfer <mail@qwtel.com> (https://qwtel.com/)",
   "license": "MIT",
   "publishConfig": {
