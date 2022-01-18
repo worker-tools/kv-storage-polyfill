@@ -1,0 +1,34 @@
+{
+  "name": "@worker-tools/kv-storage-polyfill",
+  "description": "",
+  "version": "1.0.0",
+  "author": "Florian Klampfer <mail@qwtel.com> (https://qwtel.com/)",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "type": "module",
+  "source": "src/index.ts",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "devDependencies": {
+    "microbundle": "^0.14.2"
+  },
+  "dependencies": {
+    "kv-storage-interface": "^0.2.0",
+    "kv-storage-polyfill": "^2.0.0"
+  }
+}
